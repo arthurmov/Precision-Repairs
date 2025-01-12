@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Precision Repairs | Expert Home Repair in Dallas-Fort Worth.</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Meta Description -->
+  <meta name="description" content="Precision Repairs offers reliable home appliance repair services in the Dallas-Fort Worth area. Book your appointment today for fast, expert service!">
+  
+  <!-- Open Graph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Precision Repairs | Expert Home Repair">
+  <meta property="og:description" content="We specialize in repairing appliances and other home needs such as roofing, kitchens and floors across Dallas-Fort Worth. Trusted by homeowners for quality and efficiency.">
+  <!-- <meta property="og:image" content="pr stock image 3.jpg"> -->
+  <meta property="og:url" content="https://www.precisionrepairs.co">
+  <meta property="og:type" content="website">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.precisionrepairs.co">
+
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap JS-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Raleway:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+    .navbar-brand {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+          }
+    .carousel-inner img {
+      height: 750px;
+      width: auto;
+      margin: auto;
+      object-fit: cover;
+    }
+    .carousel-caption a {
+  font-size: 1.6rem;
+  background: #007bff;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.carousel-caption a:hover {
+  background: #0056b3;
+  color: #fff;
+}
+
+    
+    .carousel-caption {
+      bottom: 30%;
+    }
+    .about-us {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-us img {
+      max-width: 75%;
+      height: auto;
+    }
+    .service-box {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensure all boxes take up the full height of the container */
+  max-height: 400px; /* Set a fixed maximum height for all service boxes */
+  border-radius: 8px; /* Optionally add rounded corners for a better effect */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.service-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.view-more-container {
+  text-align: center;
+  margin-top: 20px; /* Ensure the button is spaced from the text */
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Slightly moved down for smoother appearance */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Transition effect for opacity and position */
+}
+
+.service-box:hover .view-more-container {
+  opacity: 1; /* Show the button smoothly */
+  transform: translateY(0); /* Bring the button back to its original position */
+}
+
+
+.view-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.view-more-btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.view-more-btn i {
+  margin-left: 8px;
+}
+
+
+
+    footer {
+      background-color: #222;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    .footer-links a {
+      color: #fff;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+    .timeline-step {
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+}
+
+.timeline-icon {
+  font-size: 40px;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.timeline-step h4 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.timeline-step p {
+  color: #555;
+  font-size: 14px;
+}
+
+.payment-logo img {
+  width: 250px; /* Adjust size as needed */
+  display: block;
+  margin: 0 auto;
+}
+.nav-link.active {
+    /* border-bottom: 3px solid #fff; /* Underline effect */
+    font-weight: bold; /* Optional: Make it stand out */
+    color: #007bff !important; /* Optional: Change color */
+  }
+  
+      
+    /* Media Query for smaller screens */
+    @media (max-width: 767px) {
+      .about-us {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .about-us img {
+        max-width: 90%;
+      }
+
+    }
+  </style>
+
+<body>
+   <!-- Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">PRECISION REPAIRS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-wrap">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="testimonials.html">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="book-appointment.html">Book an Appointment</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slideshow (Carousel) -->
+  <section id="home">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="home-images/pr stock image 2.jpg" class="d-block w-100" alt="Appliance Repair 1">
+          <div class="carousel-caption">
+            <h5 style="font-weight: 700; font-size: 2.0rem; margin-bottom: 15px;">Precision in Every Repair.</h5>
+            <a href="book-appointment.html" class="btn">Book an Appointment Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="home-images/pr stock image 3.jpg" class="d-block w-100" alt="Appliance Repair 2">
+          <div class="carousel-caption">
+            <h5 style="font-weight: 700; font-size: 2.0rem; margin-bottom: 15px;">Precision in Every Repair.</h5>
+            <a href="home-images/book-appointment.html" class="btn">Book an Appointment Now</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="home-images/pr stock image 1.jpg" class="d-block w-100" alt="Appliance Repair 3">
+          <div class="carousel-caption">
+            <h5 style="font-weight: 700; font-size: 2.0rem; margin-bottom: 15px;">Precision in Every Repair.</h5>
+            <a href="book-appointment.html" class="btn">Book an Appointment Now</a>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+ <!-- Services Section -->
+<section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold">Services We Offer</h2>
+    <div class="row text-center mt-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card p-4 shadow-sm service-box">
+          <h5>Repairing Appliances</h5>
+          <p>From refrigerators and ovens to washers and dryers, our skilled technicians
+             repair a wide range of home appliances to keep your household running 
+             smoothly. We use quality parts and ensure timely service to get your 
+             appliances back in top shape.</p>
+          <div class="view-more-container">
+            <a href="services.html#repairing-appliances" class="btn view-more-btn">View More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card p-4 shadow-sm service-box">
+          <h5>Buying and Selling Appliances</h5>
+          <p>Whether you’re looking to sell old appliance parts or purchase high-quality replacements, we’ve got you covered. Explore our selection of reliable, top-notch appliance parts, and let us help you find exactly what you need to keep your appliances running smoothly.</p>
+          <div class="view-more-container">
+            <a href="services.html#buying-selling-appliances" class="btn view-more-btn">View More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="card p-4 shadow-sm service-box">
+          <h5>Home Renovations</h5>
+          <p>Transform your space with our expert home renovation services. 
+            We specialize in remodels tailored to accommodate 
+            any of your needs. We combine functionality with style to create 
+            spaces you’ll love.</p>
+          <div class="view-more-container">
+            <a href="services.html#home-renovations" class="btn view-more-btn">View More <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- About Us Section -->
+<section id="about" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <h2 class="fw-bold">About Us</h2>
+          <p>At Precision Repairs, we believe your home deserves the best 
+            care and attention. Founded in the heart of Dallas, our journey began 
+            with a simple goal: to provide exceptional repair services that 
+            homeowners can trust. Our customers are at the center of everything 
+            we do, and we pride ourselves on delivering honest, efficient, and 
+            high-quality solutions tailored to their needs. With a team of skilled
+             professionals and years of experience, we treat every home as if it 
+             were our own, ensuring lasting results and peace of mind. We’re more 
+             than just a repair service—we’re your partners in maintaining and 
+             enhancing the comfort of your home. Thank you for choosing us to be 
+             part of your story; we’re honored to serve you.</p>
+        </div>
+        <div class="col-lg-6 about-us">
+          <img src="home-images/about-us-image.jpg" class="img-fluid rounded shadow" alt="About Us">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- How It Works Section -->
+<section id="how-it-works" class="py-5  bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold">How It Works</h2>
+    <p class="text-center mt-3">Our simple and transparent process ensures a seamless experience for you.</p>
+    <div class="row">
+      <!-- Step 1: Booking an Appointment -->
+      <div class="col-md-3">
+        <div class="timeline-step text-center">
+          <div class="timeline-icon">
+            <i class="fas fa-calendar-check"></i> <!-- Use FontAwesome icon for booking -->
+          </div>
+          <h4>Step One:</h4>
+          <h4>Book an Appointment</h4>
+          <p>
+            Visit our website to choose a convenient time for your appointment. It's quick and easy!
+          </p>
+        </div>
+      </div>
+      <!-- Step 2: Technician Visit -->
+      <div class="col-md-3">
+        <div class="timeline-step text-center">
+          <div class="timeline-icon">
+            <i class="fas fa-tools"></i> <!-- Use FontAwesome icon for technician -->
+          </div>
+          <h4>Step Two:</h4>
+          <h4>Technician Visits</h4>
+          <p>
+            A skilled technician will visit your location at the scheduled time to diagnose the issue.
+          </p>
+        </div>
+      </div>
+      <!-- Step 3: Diagnosis & Repair -->
+      <div class="col-md-3">
+        <div class="timeline-step text-center">
+          <div class="timeline-icon">
+            <i class="fas fa-stethoscope"></i> <!-- Use FontAwesome icon for diagnosis -->
+          </div>
+          <h4>Step Three:</h4>
+          <h4>Diagnosis & Repair</h4>
+          <p>
+            The technician will diagnose the problem and attempt an on-site repair. We strive for a quick fix.
+          </p>
+        </div>
+      </div>
+      <!-- Step 4: Replacement Part -->
+      <div class="col-md-3">
+        <div class="timeline-step text-center">
+          <div class="timeline-icon">
+            <i class="fas fa-cogs"></i> <!-- Use FontAwesome icon for part replacement -->
+          </div>
+          <h4>Step Four:</h4>
+          <h4>Replacement Part</h4>
+          <p>
+            If the issue requires a replacement part, we'll quickly order it and schedule a follow-up visit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4 d-flex justify-content-center">
+      <!-- Step 5: Final Repair -->
+      <div class="col-md-4">
+        <div class="timeline-step text-center">
+          <div class="timeline-icon">
+            <i class="fas fa-check-circle"></i> <!-- Use FontAwesome icon for completed job -->
+          </div>
+          <h4>Step Five:</h4>
+          <h4>Final Repair</h4>
+          <p>
+            Once the part arrives, we complete the repair, ensuring everything is working like new.
+          </p>
+        </div>
+      </div>
+      <!-- Step 6: Feedback & Support -->
+      <div class="col-md-4">
+        <div class="timeline-step text-center">
+          <div class="timeline-icon">
+            <i class="fas fa-comments"></i> <!-- Use FontAwesome icon for feedback -->
+          </div>
+          <h4>Step Six:</h4>
+          <h4>Feedback & Support</h4>
+          <p>
+            We value your feedback! After the service, let us know how we did and reach out for support.
+          </p>
+        </div>
+      </div>
+      <!-- Step 7: Warranty -->
+      <div class="col-md-4">
+        <div class="timeline-step text-center">
+          <div class="timeline-icon">
+            <i class="fas fa-shield-alt"></i> <!-- Use FontAwesome icon for warranty -->
+          </div>
+          <h4>Step Seven:</h4>
+          <h4>Warranty</h4>
+          <p>
+            We offer a warranty on all repairs, giving you peace of mind knowing your appliance is covered.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Reviews Section -->
+<section id="reviews" class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold">Our Location and Reviews</h2>
+    <!-- Description about the service area -->
+    <p class="text-center mt-3">
+      We proudly serve customers in the Dallas-Fort Worth area, offering reliable and high-quality repair services.
+    </p>
+    <div id="google-reviews" class="mt-4">
+      <div class="container mt-5">
+        <div class="text-center">
+          <!-- Embedded Google Map -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d428532.3754692496!2d-97.00714605!3d32.953407049999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8a134536c5592727%3A0x4479f32b5d975af6!2sPrecision%20Repairs!5e0!3m2!1sen!2sus!4v1736622874563!5m2!1sen!2sus" 
+            width="600" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Button to redirect to testimonials page -->
+    <div class="text-center mt-4">
+      <a href="testimonials.html" class="btn btn-primary btn-lg">See More Testimonials <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+  <!-- Brands We Repair Section -->
+  <section id="brands" class="py-5  bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold">Brands We Repair</h2>
+      <div class="row text-center mt-4">
+        <div class="col-md-12">
+          <img src="home-images/appliance logos 2.png" class="img-fluid mb-3" alt="Brands" style="max-width: 100%; height: auto;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Why Choose Us Section -->
+<section id="why-choose-us" class="py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Image on the left with increased size -->
+      <div class="col-lg-3 col-md-4 col-12">
+        <img src="home-images/certified.jpg" class="img-fluid rounded shadow" alt="Experienced Technician" style="max-width: 200px;">
+      </div>
+      <!-- Text on the right, stretching all the way -->
+      <div class="col-lg-9 col-md-8 col-12">
+        <h2 class="fw-bold text-center">Why Choose Us?</h2> <!-- Text centered on all screen sizes -->
+        <p class="mt-3">
+          At Precision Repairs, we take pride in being your trusted partner for home appliance solutions. 
+          Our team of technicians have years of hands-on experience, working with a wide variety of leading 
+          brands and models, ensuring that no problem is too complex for us to handle. Each technician is 
+          rigorously trained and certified, staying up to date with the latest industry standards to deliver 
+          reliable, top-notch service every time. We understand that time is precious, which is why we 
+          prioritize fast response times, aiming to get your home running smoothly as quickly as possible. 
+          Above all, we’re committed to your satisfaction—our work isn’t done until you’re completely happy 
+          with the results. Experience the difference of professional, efficient, and dependable service with 
+          Precision Repairs.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FAQ Section -->
+<section id="faq" class="py-5  bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold">Frequently Asked Questions (FAQ)</h2>
+    <p class="text-center mt-3">
+      Have questions about our services? Our FAQ section provides quick answers to the most common queries about our repair process, pricing, scheduling, and more. We are here to make your experience as smooth and transparent as possible.
+    </p>
+    <div class="text-center mt-4">
+      <a href="faq.html" class="btn btn-primary view-more-btn">Visit FAQ Page <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Book an Appointment Section -->
+<section id="book-appointment-home" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="fw-bold">Book an Appointment</h2>
+    <p class="mt-3">
+    Our expert technicians are here to assist you! Booking an appointment is the first step to getting your home back in perfect condition. 
+    </p>
+    <p>
+      With our fast and easy process, scheduling a repair has never been simpler. Just press the button below to begin the process, and let us handle the rest.
+    </p>
+    <a href="book-appointment.html" class="btn btn-primary btn-lg mt-3">Start the Process</a>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-links mb-3">
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+    </div>
+    <div>
+      <!-- Social Media Links -->
+      <p>
+        <a href="https://www.facebook.com" target="_blank">
+          <i class="fab fa-facebook-square" style="font-size: 34px; color: #fff; margin-right: 10px;"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          <i class="fab fa-instagram" style="font-size: 34px; color: #fff; margin-right: 10px;"></i>
+        </a>
+        <a href="https://www.twitter.com" target="_blank">
+          <i class="fab fa-twitter" style="font-size: 34px; color: #fff; margin-right: 10px;"></i>
+        </a>
+      </p>
+
+      <!-- Payment Logo (Only PayPal) -->
+      <p class="payment-logo">
+        <img src="footer-images/payment methods.png" alt="PayPal">
+      </p>
+
+      <p>Contact us at: <a href="mailto:precisionrepairstx@gmail.com" class="text-white">precisionrepairstx@gmail.com</a></p>
+      <p>&copy; 2025 Precision Repairs | All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get all nav links
+    const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+    
+    // Get current URL
+    const currentUrl = window.location.pathname;
+    
+    // Loop through links and compare with current URL
+    navLinks.forEach(link => {
+      if (link.getAttribute("href") === currentUrl || currentUrl.includes(link.getAttribute("href"))) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+  
+
+</body>
+</html>
